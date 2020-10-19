@@ -1,0 +1,27 @@
+<div class="filters">
+    <h6>Filters</h6>
+    <div class="launch-year">
+        <p>Launch Year</p>
+        <hr>
+        <ul class="row">
+            <li *ngFor="let year of filterYears" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <button class="btn btn-success" (click)="filterByYear(year)">{{year}}</button>
+            </li>
+        </ul>
+    </div>
+    <div class="successful-launch">
+        <p>Successful Launch</p>
+        <hr>
+        <button class="btn btn-success" (click)="filterByLaunch('true')">True</button>
+        <button class="btn btn-success" (click)="filterByLaunch('false')">False</button>
+    </div>
+    <div class="successful-landing">
+        <p>Successful Landing</p>
+        <hr>
+        <button class="btn btn-success" (click)="filterByLanding('true')">True</button>
+        <button class="btn btn-success" (click)="filterByLanding('false')">False</button>
+    </div>
+</div>
+<!-- <p>
+    <a href="https://medium.com/angular-in-depth/angular-flex-layout-flexbox-and-grid-layout-for-angular-component-6e7c24457b63">https://medium.com/angular-in-depth/angular-flex-layout-flexbox-and-grid-layout-for-angular-component-6e7c24457b63</a>
+</p> -->

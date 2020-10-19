@@ -1,0 +1,46 @@
+<!-- 
+<div style="position: relative"> -->
+    <ngx-spinner
+    bdColor="rgba(51,51,51,0.8)"
+    size="medium"
+    color="#fff"
+    type="ball-scale-multiple"
+    [fullScreen] = "false"
+    >
+    <p style="font-size: 20px; color: white">Loading...</p>
+    </ngx-spinner>
+<!-- </div> -->
+
+<div class="row list-spacex" *ngIf="spacexData.length">
+    <div *ngFor="let space of spacexData" class="col-xs-12 col-sm-6 col-md-4 col-lg-3"> 
+        <div  class="card">
+            <img src="{{space.links.mission_patch}}" class="card-img-top" alt="{{space.mission_name}}">
+            <div class="card-body">
+              <h5 class="card-title">{{space.mission_name}}</h5>
+              <div>
+                <div class="form-group row">
+                    <label class="col-xs-6 col-sm-6 col-md-5 col-lg-5">Mission Ids: </label>
+                    <div class="col-xs-6 col-sm-6 col-md-7 col-lg-7">{{space.mission_id || '-'}}</div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-xs-6 col-sm-6 col-md-5 col-lg-5">Launch Year: </label>
+                    <div class="col-xs-6 col-sm-6 col-md-7 col-lg-7">{{space.launch_year || '-'}}</div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-6 col-md-5">Successful Launch: </label>
+                    <div class="col-sm-6 col-md-7">{{space.launch_success || '-'}}</div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-6 col-md-5">Successful Landing: </label>
+                    <div class="col-sm-6 col-md-7">{{space.launch_success || '-'}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+<div *ngIf="!spacexData.length" style="text-align: center;">
+    <h1>No Data Found.</h1>
+</div>
+
+

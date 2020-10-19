@@ -1,1 +1,113 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+$lightgrey: #f3f3f3; 
+
+
+//screen sizes
+$phone: 480px;
+$tablet: 720px;
+$laptop: 1024px;
+$desktop: 1400px;
+
+
+html, body, div, p, h5 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+html body {
+    height: 100vh;
+    background: $lightgrey;
+    font-size: 14px;
+}
+.navbar-brand{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container-fluid{
+    margin-top: 100px;
+}
+
+
+.list-spacex img{
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+}
+
+.list-spacex .card{
+    margin: 15px 0px 15px 0px;
+}
+
+.launch-year, .successful-launch, .successful-landing{
+    text-align: center;
+}
+
+.launch-year li{
+    list-style-type: none;
+    padding: 5px;
+}
+.launch-year hr {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    width: 55%;
+}
+
+.successful-launch{
+    margin-bottom: 30px;
+}
+.successful-launch button{
+    margin: 0px 5px 0px 5px;
+    padding: 5px 15px 5px 15px;
+}
+.successful-launch hr {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    width: 75%;
+}
+
+.successful-landing button{
+    margin: 0px 5px 0px 5px;
+    padding: 5px 15px 5px 15px;
+}
+.successful-landing hr {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    width: 75%;
+}
+
+
+.card-body .form-group label{
+    font-weight: 700;
+}
+.card-title{
+    color: #0808ffd1;
+}
+footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+// mobile view
+@media screen and (max-width: $tablet){
+    
+}
+// tablet view
+@media screen and (max-width: $laptop){
+
+}
+// desktop view
+@media screen and (min-width: $desktop){
+
+}
