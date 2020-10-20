@@ -4,8 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
- npm run start
-
+ npm run start         // Client side rendering
+ npm run dev:ssr      // server side rendering
 ## To run Webpack build
  
  npm run app:watch
