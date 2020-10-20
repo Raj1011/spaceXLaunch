@@ -14,7 +14,7 @@
     "app:watch": "rimraf dist && npm-run-all -p sXwatch:*",
     "sXwatch:client": "ng build --build-optimizer=false --aot=false  --extract-css=false --source-map=true --watch",
     "sXwatch:webpack": "node ./node_modules/npm-delay 10000 && webpack --config webpack.config.js --watch",
-    "sXwatch:nodemon": "node ./node_modules/npm-delay 45000 && nodemon dist/server.js",
+    "sXwatch:nodemon": "node ./node_modules/npm-delay 45000 && nodemon  dist/server.js",
     "prerender": "ng run spaceX:prerender"
   },
   "private": true,
