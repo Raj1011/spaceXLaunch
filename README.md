@@ -2,10 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
 
-## Development server
+## Development server : Client side rendering
 
- npm run start         // Client side rendering
- npm run dev:ssr      // server side rendering
+ npm run start       
+
+## Development server: Server side rendering
+ 
+ npm run dev:ssr      
+ 
 ## To run Webpack build
  
  npm run app:watch
